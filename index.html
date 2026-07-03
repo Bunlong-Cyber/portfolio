@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bo Bunlong — Cybersecurity Student | SOC Enthusiast | Purple Team Learner</title>
+<meta name="description" content="Portfolio of Bo Bunlong, a cybersecurity student at CADT specializing in SOC operations and Purple Team methodology.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+  ============================================================================
+  FILE MAP — quick guide to where things live in this file
+  ============================================================================
+  Every section below is wrapped in a <!-- ===== NAME ===== --> comment banner
+  so you can Ctrl+F / Cmd+F for the section you want. Sections in page order:
+
+    NAV            → top navigation bar + links
+    HERO           → headline + animated terminal + curiosity/discipline bars
+    ABOUT          → intro paragraphs + the "ID card" panel on the right
+    CAREER GOALS   → the checklist of long-term goals
+    INTEREST CARDS → the 6 focus-area cards (SOC, Threat Hunting, etc.)
+    SKILLS         → skill bars grouped by category
+    CERTIFICATIONS → your certificates / completed courses (NEW — edit me as you earn certs)
+    EXPERIENCE     → internships / jobs / volunteer work (NEW — edit me as you gain experience)
+    PROJECTS       → project write-ups (problem / relevance / skills / challenges)
+    LAB            → your home lab diagram + activities list
+    CTF            → TryHackMe / HTB / PicoCTF progress cards
+    WRITEUPS       → blog post list
+    ACHIEVEMENTS   → milestone timeline
+    CONTACT        → email / social links
+
+  Each section that you'll likely update often (Certifications, Experience,
+  Projects, Skills, Achievements, Writeups) has its own "HOW TO ADD/EDIT"
+  comment directly above it with copy-paste-ready instructions.
+
+  Numbering: the small "01 // ..." labels above each heading (called the
+  "eyebrow") are just a visual style, not auto-generated — if you add/remove
+  a whole section, remember to renumber the eyebrows that follow it.
+  ============================================================================
+-->
+
+<div class="bg-grid"></div>
+<div class="bg-scanline"></div>
+<div class="bg-vignette"></div>
+
+<!-- ============================== NAV ============================== -->
+<header>
+  <div class="wrap nav">
+    <div class="brand"><span class="dot"></span> BO_BUNLONG.SEC</div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#interests">Focus</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certs</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#lab">Lab</a>
+      <a href="#ctf">CTF</a>
+      <a href="#writeups">Writeups</a>
+      <a href="#achievements">Log</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-status">UPTIME: FOUNDATION_YR → YR_02 <span style="color:var(--green)">●</span></div>
+  </div>
+</header>
+
+<!-- ============================== HERO ============================== -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="terminal-tag">/home/bo-bunlong/init.sh</div>
+      <h1>Bo Bunlong<span class="cursor"></span><br><span class="accent">defending systems,</span><br>one alert at a time.</h1>
+      <div class="role-line">
+        <span class="role">Cybersecurity Student</span><span class="sep">/</span>
+        <span class="role b">SOC Enthusiast</span><span class="sep">/</span>
+        <span class="role p">Purple Team Learner</span>
+      </div>
+      <p class="lede">Hi, I'm Bo Bunlong — an 18-year-old cybersecurity student at CADT. I'm deeply interested in Security Operations Center workflows and Purple Team practices, where offensive and defensive strategies work together to strengthen security. I learn by doing: hands-on labs, security projects, and continuous technical exploration.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects →</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>Institution</b> — CADT, TN Department</div>
+        <div><b>Stage</b> — Foundation Year → Year 2</div>
+        <div><b>Track</b> — Cybersecurity</div>
+      </div>
+    </div>
+
+    <div class="console panel">
+      <div class="console-bar">
+        <div class="dots"><span></span><span></span><span></span></div>
+        <div class="console-title">soc-terminal — bash</div>
+        <div style="width:40px"></div>
+      </div>
+      <div class="console-body" id="consoleBody"><span class="type-cursor"></span></div>
+      <div class="gauge-row">
+        <div class="gauge">
+          <div class="gauge-label">Curiosity</div>
+          <div class="gauge-track"><div class="gauge-fill" data-fill="92" style="background:var(--green)"></div></div>
+        </div>
+        <div class="gauge">
+          <div class="gauge-label">Discipline</div>
+          <div class="gauge-track"><div class="gauge-fill" data-fill="85" style="background:var(--blue)"></div></div>
+        </div>
+        <div class="gauge">
+          <div class="gauge-label">Hands-on Practice</div>
+          <div class="gauge-track"><div class="gauge-fill" data-fill="78" style="background:var(--amber)"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== ABOUT ============================== -->
+<section id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">01 // About Me</div>
+        <h2 class="section-title">Still early — already serious about it.</h2>
+      </div>
+      <p class="section-desc">A snapshot of where I am, what I'm studying, and how I approach the work.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p>I'm a student at <strong>CADT (Cambodia Academy of Digital Technology)</strong>, currently completing my <strong>Foundation Year</strong> and transitioning into <strong>Year 2</strong> under the TN Department, specializing in <strong>Cybersecurity</strong>.</p>
+        <p>I'm a curious and highly motivated learner with a strong pull toward real-world cyber defense operations. I like taking systems apart to understand how they break, and putting them back together to understand how they hold.</p>
+        <p>Most of my learning happens outside the classroom too — in labs, CTF rooms, and personal projects — where I get to turn theory into <strong>practical, technical problem-solving</strong>.</p>
+      </div>
+
+      <div class="about-side">
+        <!--
+          HOW TO EDIT: this "ID card" is just a list of label/value rows.
+          To add a new row (e.g. "Location" or "GitHub"), copy one
+          <div class="id-row">...</div> line and change the two spans:
+            id-key = the label (left side, uppercase automatically via CSS)
+            id-val = the value (right side). Add class="id-val green" to
+            make a specific value glow green, like the Clearance row does.
+        -->
+        <div class="id-card panel reveal">
+          <div class="id-row"><span class="id-key">Name</span><span class="id-val">Bo Bunlong</span></div>
+          <div class="id-row"><span class="id-key">Age</span><span class="id-val">18</span></div>
+          <div class="id-row"><span class="id-key">Institution</span><span class="id-val">CADT</span></div>
+          <div class="id-row"><span class="id-key">Department</span><span class="id-val">TN Department</span></div>
+          <div class="id-row"><span class="id-key">Specialization</span><span class="id-val">Cybersecurity</span></div>
+          <div class="id-row"><span class="id-key">Standing</span><span class="id-val">Foundation Year → Year 2</span></div>
+          <div class="id-row"><span class="id-key">Clearance</span><span class="id-val green">LEARNER // ACTIVE</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CAREER GOALS ============================== -->
+<section id="goals">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">02 // Career Goals</div>
+        <h2 class="section-title">Where this is heading.</h2>
+      </div>
+      <p class="section-desc">The roadmap I'm working toward, one skill at a time.</p>
+    </div>
+
+    <div class="goal-list reveal">
+      <div class="goal-item">
+        <div class="goal-check">✓</div>
+        <div class="goal-text"><b>Become a SOC Analyst</b><span>Monitor, triage, and respond to security events as part of a Security Operations Center team.</span></div>
+      </div>
+      <div class="goal-item">
+        <div class="goal-check">✓</div>
+        <div class="goal-text"><b>Master incident detection &amp; response</b><span>Build a reliable process for spotting incidents early and responding to them methodically.</span></div>
+      </div>
+      <div class="goal-item">
+        <div class="goal-check">✓</div>
+        <div class="goal-text"><b>Sharpen log analysis &amp; threat hunting</b><span>Get comfortable reading logs at scale and proactively hunting for signals that automated tools miss.</span></div>
+      </div>
+      <div class="goal-item">
+        <div class="goal-check">✓</div>
+        <div class="goal-text"><b>Gain practical SIEM experience</b><span>Build fluency with SIEM platforms for correlation, alerting, and investigation.</span></div>
+      </div>
+      <div class="goal-item">
+        <div class="goal-check">✓</div>
+        <div class="goal-text"><b>Understand attacker techniques</b><span>Study offensive methodology so defensive decisions are grounded in how attacks actually happen.</span></div>
+      </div>
+      <div class="goal-item">
+        <div class="goal-check">✓</div>
+        <div class="goal-text"><b>Grow into a Purple Team professional</b><span>Combine attack simulation and defense improvement into one continuous feedback loop.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== INTEREST CARDS ============================== -->
+<section id="interests">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">03 // Focus Areas</div>
+        <h2 class="section-title">What I keep coming back to.</h2>
+      </div>
+      <p class="section-desc">Six areas of cybersecurity I'm actively studying and practicing.</p>
+    </div>
+
+    <div class="card-grid">
+      <div class="interest-card panel reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="13" rx="1.5"/><path d="M8 21h8M12 17v4" stroke-linecap="round"/><path d="M7 9l2.5 2.5L7 14M13 14h4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Security Operations Center</h3>
+        <p>Real-time monitoring, alert triage, and the workflows that keep a SOC running.</p>
+      </div>
+      <div class="interest-card panel reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.8-3.8" stroke-linecap="round"/></svg>
+        <h3>Threat Hunting</h3>
+        <p>Proactively searching logs and telemetry for signals that rules alone don't catch.</p>
+      </div>
+      <div class="interest-card panel reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9.5 12l1.8 1.8L15 10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Incident Response</h3>
+        <p>Containing, analyzing, and recovering from security incidents with a clear process.</p>
+      </div>
+      <div class="interest-card panel reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="10" width="16" height="9" rx="1.5"/><path d="M8 10V7a4 4 0 018 0v3" stroke-linecap="round"/></svg>
+        <h3>Blue Team Defense</h3>
+        <p>Hardening systems, tuning detections, and reducing attack surface before it matters.</p>
+      </div>
+      <div class="interest-card panel reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M4 7l8-4 8 4M4 17l8 4 8-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Purple Team Operations</h3>
+        <p>Bridging red and blue perspectives to close the loop between attack and defense.</p>
+      </div>
+      <div class="interest-card panel reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2" stroke-linecap="round"/></svg>
+        <h3>Network Security</h3>
+        <p>Understanding traffic, protocols, and how packets reveal what's really happening.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SKILLS ============================== -->
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">04 // Skills</div>
+        <h2 class="section-title">Honest, current skill levels.</h2>
+      </div>
+      <p class="section-desc">No inflated claims — this reflects where I actually am, and where I'm actively improving.</p>
+    </div>
+
+    <!--
+      HOW TO ADD/EDIT A SKILL:
+      1. Find the right .skill-group (Programming, Security Tools, Operating
+         Systems, or Security Domains) — or copy a whole .skill-group block
+         to start a new category.
+      2. Copy one .skill-row block and change:
+           skill-name  → the tool/language/domain name
+           skill-level → the badge text AND its class:
+                           class="skill-level beg"      = grey  "Beginner"
+                           class="skill-level int"      = green "Intermediate"
+                           class="skill-level learning" = amber "Learning"
+           data-fill   → a number 0-100 for the progress bar fill %.
+                          Treat this as a rough self-rating, not a precise
+                          metric — it's fine to eyeball it and adjust later.
+      3. The bar animates automatically on scroll — no JS changes needed.
+    -->
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <h4>Programming</h4>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">Python</span><span class="skill-level int">Beginner / Intermediate</span></div>
+          <div class="skill-track"><div class="skill-fill" data-fill="55"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">C</span><span class="skill-level beg">Beginner</span></div>
+          <div class="skill-track"><div class="skill-fill" data-fill="30"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">Bash</span><span class="skill-level beg">Beginner</span></div>
+          <div class="skill-track"><div class="skill-fill" data-fill="35"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h4>Security Tools</h4>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">Wireshark</span><span class="skill-level beg">Beginner</span></div>
+          <div class="skill-track"><div class="skill-fill" data-fill="40"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">Nmap</span><span class="skill-level beg">Beginner</span></div>
+          <div class="skill-track"><div class="skill-fill" data-fill="42"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">Burp Suite</span><span class="skill-level beg">Beginner</span></div>
+          <div class="skill-track"><div class="skill-fill" data-fill="28"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">Splunk</span><span class="skill-level learning">Learning</span></div>
+          <div class="skill-track"><div class="skill-fill" data-fill="15"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">SIEM Tools</span><span class="skill-level learning">Learning</span></div>
+          <div class="skill-track"><div class="skill-fill" data-fill="15"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h4>Operating Systems</h4>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">Kali Linux</span><span class="skill-level int">Intermediate</span></div>
+          <div class="skill-track"><div class="skill-fill" data-fill="50"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">Ubuntu</span><span class="skill-level int">Intermediate</span></div>
+          <div class="skill-track"><div class="skill-fill" data-fill="55"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">Windows</span><span class="skill-level int">Intermediate</span></div>
+          <div class="skill-track"><div class="skill-fill" data-fill="60"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h4>Security Domains</h4>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">Network Security</span><span class="skill-level beg">Beginner</span></div>
+          <div class="skill-track"><div class="skill-fill" data-fill="38"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">SOC Monitoring</span><span class="skill-level learning">Learning</span></div>
+          <div class="skill-track"><div class="skill-fill" data-fill="20"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">Log Analysis</span><span class="skill-level learning">Learning</span></div>
+          <div class="skill-track"><div class="skill-fill" data-fill="22"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">Vulnerability Assessment</span><span class="skill-level beg">Beginner</span></div>
+          <div class="skill-track"><div class="skill-fill" data-fill="25"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">Threat Detection</span><span class="skill-level beg">Beginner</span></div>
+          <div class="skill-track"><div class="skill-fill" data-fill="20"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CERTIFICATIONS ==============================
+  HOW TO ADD A CERTIFICATION:
+  1. Copy one <div class="cert-card panel reveal"> ... </div> block below.
+  2. Fill in:
+       cert-name   → full title of the certificate/course
+       cert-issuer → who issued it (e.g. "Google", "CompTIA", "TryHackMe")
+       cert-date   → month + year earned, or "In Progress" / "Planned"
+       cert-badge  → status text + class:
+                       class="cert-badge done"    = green  "Completed"
+                       class="cert-badge progress"= amber  "In Progress"
+                       class="cert-badge planned" = grey   "Planned"
+  3. If you have a PDF/verification link, wrap cert-name in an <a href="..."> tag.
+  4. Delete the <div class="cert-card empty-state ..."> placeholder once you
+     add your first real certificate.
+============================================================================== -->
+<section id="certifications">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">05 // Certifications</div>
+        <h2 class="section-title">Certifications &amp; training.</h2>
+      </div>
+      <p class="section-desc">Formal courses and credentials — this list grows as I complete more.</p>
+    </div>
+
+    <div class="cert-grid">
+      <!-- Placeholder / empty state — replace or delete once you add a real certificate -->
+      <div class="cert-card empty-state panel reveal">
+        <div class="empty-plus">+</div>
+        <p><strong>No certifications yet.</strong><br>Add your first one here once you complete a course — for example, Google Cybersecurity Certificate, CompTIA Security+, or a TryHackMe learning path badge.</p>
+      </div>
+
+      <!--
+      EXAMPLE — copy this block for each real certificate, then delete this comment:
+      <div class="cert-card panel reveal">
+        <div class="cert-top">
+          <span class="cert-badge done">Completed</span>
+        </div>
+        <h3 class="cert-name">TryHackMe: Pre Security Path</h3>
+        <div class="cert-issuer">TryHackMe</div>
+        <div class="cert-date">June 2026</div>
+      </div>
+      -->
+    </div>
+  </div>
+</section>
+
+<!-- ============================== EXPERIENCE ==============================
+  HOW TO ADD EXPERIENCE:
+  1. Copy one <div class="tl-item"> ... </div> block below (same pattern as
+     the Achievements timeline further down the page).
+  2. Fill in:
+       h3        → role/title (e.g. "SOC Intern")
+       .exp-meta → organization name + dates (e.g. "Company Name · Jun–Aug 2026")
+       p         → 1-2 sentences on what you actually did/learned
+  3. Delete the empty-state <div class="tl-item exp-empty"> once you add a
+     real entry.
+============================================================================== -->
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">06 // Experience</div>
+        <h2 class="section-title">Hands-on experience.</h2>
+      </div>
+      <p class="section-desc">Internships, volunteer work, and freelance security tasks — filled in as they happen.</p>
+    </div>
+
+    <div class="timeline reveal">
+      <!-- Placeholder / empty state — replace or delete once you have a real entry -->
+      <div class="tl-item exp-empty">
+        <div class="tl-dot"></div>
+        <h3>No formal experience yet</h3>
+        <p>This section will grow as I take on internships, volunteer security work, or freelance projects. Check back as I progress through Year 2.</p>
+      </div>
+
+      <!--
+      EXAMPLE — copy this block for each real role, then delete this comment:
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <h3>SOC Intern</h3>
+        <div class="exp-meta">Company Name · Jun 2026 – Aug 2026</div>
+        <p>Assisted with alert triage and log review under supervision, and helped document incident response steps.</p>
+      </div>
+      -->
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PROJECTS ==============================
+  HOW TO ADD A PROJECT:
+  1. Copy one <div class="project panel reveal"> ... </div> block below.
+  2. Fill in:
+       project-tag    → short category label (e.g. "Reconnaissance", "Blue Team")
+       h3             → project title
+       project-status → "Completed" / "In progress" / "Planned" / "Concept"
+       Problem Solved → what the tool/project actually does
+       Relevance      → why it matters for cybersecurity/SOC work
+       Skills Learned → one <span class="pill">Skill</span> per skill/tool used
+       Challenges     → an honest note on what was hard about it
+============================================================================== -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">07 // Projects</div>
+        <h2 class="section-title">Learning by building.</h2>
+      </div>
+      <p class="section-desc">Small tools and exercises focused on cybersecurity fundamentals.</p>
+    </div>
+
+    <div class="project-list">
+      <!-- Copy any block below (a full <div class="project panel reveal">...</div>) to add a new project -->
+
+      <div class="project panel reveal">
+        <div class="project-head">
+          <div class="project-tag">Reconnaissance</div>
+          <h3>Python Port Scanner</h3>
+          <div class="project-status">In progress</div>
+        </div>
+        <div class="project-body">
+          <dl>
+            <dt>Problem Solved</dt><dd>Identifies open ports and running services on a target host for basic recon.</dd>
+            <dt>Relevance</dt><dd>Port scanning is a foundational step in both offensive recon and defensive exposure checks.</dd>
+            <dt>Skills Learned</dt><dd class="skills"><span class="pill">Python sockets</span><span class="pill">TCP/IP basics</span><span class="pill">Multithreading</span></dd>
+            <dt>Challenges</dt><dd>Handling timeouts gracefully and speeding up scans without overwhelming the target network.</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="project panel reveal">
+        <div class="project-head">
+          <div class="project-tag">Network</div>
+          <h3>Basic Packet Sniffer</h3>
+          <div class="project-status">In progress</div>
+        </div>
+        <div class="project-body">
+          <dl>
+            <dt>Problem Solved</dt><dd>Captures live network traffic and breaks it down into readable protocol layers.</dd>
+            <dt>Relevance</dt><dd>Understanding raw traffic is core to network security monitoring and packet analysis.</dd>
+            <dt>Skills Learned</dt><dd class="skills"><span class="pill">Scapy</span><span class="pill">Protocol parsing</span><span class="pill">Wireshark</span></dd>
+            <dt>Challenges</dt><dd>Parsing different protocol headers correctly and filtering noise from relevant traffic.</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="project panel reveal">
+        <div class="project-head">
+          <div class="project-tag">Blue Team</div>
+          <h3>Log Analysis Tool</h3>
+          <div class="project-status">Planned</div>
+        </div>
+        <div class="project-body">
+          <dl>
+            <dt>Problem Solved</dt><dd>Parses system/server logs and flags suspicious patterns like repeated failed logins.</dd>
+            <dt>Relevance</dt><dd>Log analysis is a daily SOC task for spotting early signs of compromise.</dd>
+            <dt>Skills Learned</dt><dd class="skills"><span class="pill">Regex</span><span class="pill">Python</span><span class="pill">Log formats</span></dd>
+            <dt>Challenges</dt><dd>Separating real anomalies from normal noisy log activity.</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="project panel reveal">
+        <div class="project-head">
+          <div class="project-tag">SOC</div>
+          <h3>SOC Alert Simulation</h3>
+          <div class="project-status">Planned</div>
+        </div>
+        <div class="project-body">
+          <dl>
+            <dt>Problem Solved</dt><dd>Simulates a stream of security alerts to practice triage and prioritization.</dd>
+            <dt>Relevance</dt><dd>Mirrors real SOC analyst work: deciding what's urgent versus what can wait.</dd>
+            <dt>Skills Learned</dt><dd class="skills"><span class="pill">Alert triage</span><span class="pill">Prioritization</span><span class="pill">Python</span></dd>
+            <dt>Challenges</dt><dd>Designing realistic alert severity levels and avoiding alert fatigue in the simulation.</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="project panel reveal">
+        <div class="project-head">
+          <div class="project-tag">Assessment</div>
+          <h3>Vulnerability Scanner</h3>
+          <div class="project-status">Planned</div>
+        </div>
+        <div class="project-body">
+          <dl>
+            <dt>Problem Solved</dt><dd>Checks a target system against a list of common misconfigurations and known weaknesses.</dd>
+            <dt>Relevance</dt><dd>Vulnerability assessment bridges offensive discovery and defensive prioritization.</dd>
+            <dt>Skills Learned</dt><dd class="skills"><span class="pill">CVE basics</span><span class="pill">Python</span><span class="pill">Reporting</span></dd>
+            <dt>Challenges</dt><dd>Keeping the check list meaningful without producing false positives.</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="project panel reveal">
+        <div class="project-head">
+          <div class="project-tag">Detection</div>
+          <h3>Simple IDS Concept</h3>
+          <div class="project-status">Concept</div>
+        </div>
+        <div class="project-body">
+          <dl>
+            <dt>Problem Solved</dt><dd>A lightweight rule-based system that flags traffic patterns matching known attack signatures.</dd>
+            <dt>Relevance</dt><dd>Introduces the logic behind intrusion detection systems used in real SOC environments.</dd>
+            <dt>Skills Learned</dt><dd class="skills"><span class="pill">Detection logic</span><span class="pill">Packet analysis</span><span class="pill">Python</span></dd>
+            <dt>Challenges</dt><dd>Writing rules specific enough to catch threats but broad enough to avoid missing variants.</dd>
+          </dl>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================== LAB ============================== -->
+<section id="lab">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">08 // Cybersecurity Lab</div>
+        <h2 class="section-title">My personal practice environment.</h2>
+      </div>
+      <p class="section-desc">A safe, isolated setup for hands-on offensive and defensive practice.</p>
+    </div>
+
+    <div class="lab-grid">
+      <div class="lab-diagram panel reveal">
+        <div class="host-box">
+          <b>Host Machine</b>
+          Windows PC / Laptop — hypervisor host
+        </div>
+        <div class="vm-stack">
+          <div class="vm attacker"><b>Kali Linux</b><span>Attacker / testing environment</span></div>
+          <div class="vm defender"><b>Ubuntu Server</b><span>Defensive target environment</span></div>
+          <div class="vm endpoint"><b>Windows VM</b><span>Endpoint simulation</span></div>
+        </div>
+      </div>
+
+      <div class="lab-activities reveal">
+        <h4>Lab Activities</h4>
+        <div class="activity-row"><span class="activity-idx">01</span><span>Packet capture analysis</span></div>
+        <div class="activity-row"><span class="activity-idx">02</span><span>Port scanning against isolated VMs</span></div>
+        <div class="activity-row"><span class="activity-idx">03</span><span>Traffic monitoring between host and guests</span></div>
+        <div class="activity-row"><span class="activity-idx">04</span><span>Basic exploitation practice in safe, isolated environments</span></div>
+        <div class="activity-row"><span class="activity-idx">05</span><span>Log monitoring on the Ubuntu Server VM</span></div>
+        <div class="activity-row"><span class="activity-idx">06</span><span>Detection rule experimentation</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CTF ============================== -->
+<section id="ctf">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">09 // CTF Progress</div>
+        <h2 class="section-title">Tracking growth, not rankings.</h2>
+      </div>
+      <p class="section-desc">Steady progress across beginner-friendly platforms.</p>
+    </div>
+
+    <!--
+      HOW TO UPDATE: replace the "—" placeholders in ctf-stat rows with real
+      numbers as you complete rooms/challenges, and bump each data-fill
+      value (0-100) to roughly reflect your progress through that platform.
+    -->
+    <div class="ctf-grid">
+      <div class="ctf-card panel reveal">
+        <div class="ctf-top"><span class="ctf-plat">TryHackMe</span><span class="ctf-badge">Active</span></div>
+        <div class="ctf-stat"><span>Rooms completed</span><span>—</span></div>
+        <div class="ctf-stat"><span>Skills gained</span><span>Recon, enumeration</span></div>
+        <div class="ctf-track"><div class="ctf-fill" data-fill="30"></div></div>
+        <p class="ctf-note">Working through beginner learning paths on networking and SOC fundamentals.</p>
+      </div>
+      <div class="ctf-card panel reveal">
+        <div class="ctf-top"><span class="ctf-plat">Hack The Box</span><span class="ctf-badge">Starting</span></div>
+        <div class="ctf-stat"><span>Challenges solved</span><span>—</span></div>
+        <div class="ctf-stat"><span>Skills gained</span><span>Web basics</span></div>
+        <div class="ctf-track"><div class="ctf-fill" data-fill="12"></div></div>
+        <p class="ctf-note">Just getting oriented with starting point machines.</p>
+      </div>
+      <div class="ctf-card panel reveal">
+        <div class="ctf-top"><span class="ctf-plat">PicoCTF</span><span class="ctf-badge">Active</span></div>
+        <div class="ctf-stat"><span>Challenges solved</span><span>—</span></div>
+        <div class="ctf-stat"><span>Skills gained</span><span>Crypto, forensics intro</span></div>
+        <div class="ctf-track"><div class="ctf-fill" data-fill="22"></div></div>
+        <p class="ctf-note">Practicing fundamentals through picoCTF's beginner tracks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== BLOG / WRITEUPS ============================== -->
+<section id="writeups">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">10 // Writeups</div>
+        <h2 class="section-title">Notes from the learning journey.</h2>
+      </div>
+      <p class="section-desc">Writing things down to understand them better — and to help the next beginner.</p>
+    </div>
+
+    <!--
+      HOW TO ADD A WRITEUP: copy one <a class="blog-row">...</a> line, update
+      the number, title, and category tag. Point href="#" to the real post
+      URL once you've published it (e.g. a Medium/dev.to/GitHub Pages link).
+    -->
+    <div class="blog-list reveal">
+      <a class="blog-row" href="#"><span class="blog-num">001</span><div class="blog-info"><h3>What is a SOC?</h3><span>Fundamentals</span></div><span class="blog-arrow">→</span></a>
+      <a class="blog-row" href="#"><span class="blog-num">002</span><div class="blog-info"><h3>Blue Team vs Red Team vs Purple Team</h3><span>Fundamentals</span></div><span class="blog-arrow">→</span></a>
+      <a class="blog-row" href="#"><span class="blog-num">003</span><div class="blog-info"><h3>Introduction to SIEM</h3><span>Tools</span></div><span class="blog-arrow">→</span></a>
+      <a class="blog-row" href="#"><span class="blog-num">004</span><div class="blog-info"><h3>Packet Analysis Basics</h3><span>Network Security</span></div><span class="blog-arrow">→</span></a>
+      <a class="blog-row" href="#"><span class="blog-num">005</span><div class="blog-info"><h3>My First CTF Experience</h3><span>Journal</span></div><span class="blog-arrow">→</span></a>
+      <a class="blog-row" href="#"><span class="blog-num">006</span><div class="blog-info"><h3>How Nmap Works</h3><span>Tools</span></div><span class="blog-arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== ACHIEVEMENTS ============================== -->
+<section id="achievements">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">11 // Growth Log</div>
+        <h2 class="section-title">Milestones so far.</h2>
+      </div>
+      <p class="section-desc">Small wins, logged honestly.</p>
+    </div>
+
+    <!--
+      HOW TO ADD A MILESTONE: copy one <div class="tl-item">...</div> block
+      and change the <h3> (short title) and <p> (1 sentence of context).
+      Newest milestones can go at the top or bottom — whichever reads best.
+    -->
+    <div class="timeline reveal">
+      <div class="tl-item"><div class="tl-dot"></div><h3>Completed cybersecurity coursework</h3><p>Finished Foundation Year modules covering core security concepts at CADT.</p></div>
+      <div class="tl-item"><div class="tl-dot"></div><h3>Built first security tool</h3><p>Wrote an early version of a Python-based scanning script.</p></div>
+      <div class="tl-item"><div class="tl-dot"></div><h3>Created personal cyber lab</h3><p>Set up a Kali / Ubuntu / Windows VM environment for safe practice.</p></div>
+      <div class="tl-item"><div class="tl-dot"></div><h3>Solved first CTF challenge</h3><p>Completed an introductory room on TryHackMe.</p></div>
+      <div class="tl-item"><div class="tl-dot"></div><h3>Completed first security writeup</h3><p>Published a short breakdown of a beginner CTF room.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CONTACT ============================== -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-panel panel bracket reveal">
+      <!-- HOW TO EDIT: swap the mailto: address and the "#" hrefs below for your real email/LinkedIn/GitHub/TryHackMe profile URLs -->
+      <div class="eyebrow">12 // Contact</div>
+      <h2>Open to internships, mentorship, and SOC opportunities.</h2>
+      <p>Still learning, always improving — reach out if you're building something in security, or if you just want to talk defense.</p>
+      <div class="contact-links">
+        <a href="mailto:bo.bunlong@example.com" class="btn btn-primary">Email Me</a>
+        <a href="#" class="btn btn-ghost">LinkedIn</a>
+        <a href="#" class="btn btn-ghost">GitHub</a>
+        <a href="#" class="btn btn-ghost">TryHackMe</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    BO_BUNLONG.SEC <span class="sep">|</span> CADT — TN Department <span class="sep">|</span> © <span id="year"></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
