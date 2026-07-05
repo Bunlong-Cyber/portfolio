@@ -376,7 +376,7 @@ header{
 .id-card .id-val{color:var(--text-hi); text-align:right;}
 .id-card .id-val.green{color:var(--green);}
 
-.about-side{display:flex; flex-direction:column; gap:24px;}
+.about-side{display:flex; flex-direction:column; gap: 24px;}
 
 /* Profile card with photo ------------------------------------------------ */
 .profile-card{
@@ -388,7 +388,9 @@ header{
   border-radius:8px;
 }
 .profile-photo{
-  width:100%;
+  position: relative;
+  left: 80px;
+  width:75%;
   height:auto;
   display:block;
   transition:transform .35s cubic-bezier(.2,.8,.2,1), filter .35s ease;
