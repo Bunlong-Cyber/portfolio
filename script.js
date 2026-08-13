@@ -76,7 +76,7 @@ function setContent() {
   if (contact) contact.innerHTML = '<div class="eyebrow">12 // Contact</div><h2>Open to IT Support &amp; Cybersecurity internships.</h2><p>If you\'re looking for a curious cybersecurity student who is serious about learning, building, and growing, I\'d be happy to connect.</p><div class="contact-links"><a href="mailto:lengbo777working@gmail.com">lengbo777working@gmail.com</a><a href="https://github.com/Bunlong-Cyber" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/bo-bunlong-752269333" target="_blank" rel="noopener">LinkedIn</a><a href="https://tryhackme.com/p/lengbo777" target="_blank" rel="noopener">TryHackMe</a><a href="https://profile.hackthebox.com/profile/019f217f-66cf-700c-90e4-c303f4262e74" target="_blank" rel="noopener">Hack The Box</a></div>';
 
   const style = document.createElement('style');
-  style.textContent = '.ctf-meta{font-size:.72rem!important;color:#6f7f8d!important;font-weight:500!important;line-height:1.3!important;margin:.35rem 0 .6rem!important}.nav-links{margin-left:24px!important}.interest-card .icon{width:32px;height:32px}';
+  style.textContent = '.ctf-card .ctf-meta{display:block!important;width:max-content!important;font-family:var(--mono)!important;font-size:10.5px!important;line-height:1.3!important;color:var(--text-low)!important;font-weight:400!important;margin:2px 0 14px!important;padding:0!important}.ctf-card .ctf-meta::before,.ctf-card .ctf-meta::after{display:none!important}.nav-links{margin-left:24px!important}.interest-card .icon{width:32px;height:32px}';
   document.head.appendChild(style);
 }
 
