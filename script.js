@@ -1,29 +1,17 @@
 // ============================================================================
-// This file wires up behavior only — all editable CONTENT (your projects,
-// certs, experience, skills, etc.) lives in index.html, not here.
-// You generally will NOT need to touch this file when adding content, as
-// long as new HTML re-uses these existing patterns:
-//   class="reveal"        → fades/slides in on scroll (any new element)
-//   data-fill="NN"        → animates a bar's width to NN% on scroll
-//                            (used by skill bars, hero gauges, CTF bars)
-//   <section id="...">    → automatically gets nav-highlighting IF a
-//                            matching <a href="#id"> exists in .nav-links
+// Portfolio behavior only. Editable portfolio content lives in index.html.
 // ============================================================================
 
-// ---------------------------------------------------------------------------
-// Terminal boot sequence in hero console
-// ---------------------------------------------------------------------------
 const bootLines = [
   { text: '$ whoami', cls: 'fade' },
-  { text: 'bo.bunlong // foundation_year → year_02', cls: 'ok' },
+  { text: 'bo.bunlong // year_01_complete → year_02', cls: 'ok' },
   { text: '$ cat profile.txt', cls: 'fade' },
   { text: 'institution : Cambodia Academy of Digital Technology (CADT)', cls: 'info' },
-  { text: 'department  : TN Department', cls: 'info' },
-  { text: 'track       : Cybersecurity', cls: 'info' },
-  { text: 'focus       : SOC Operations · Purple Team', cls: 'info' },
+  { text: 'program     : Telecommunications & Networking · Cyber Security', cls: 'info' },
+  { text: 'focus       : IT Support · Cybersecurity · Purple Team', cls: 'info' },
   { text: '$ status --check', cls: 'fade' },
   { text: '[OK] curiosity........... online', cls: 'ok' },
-  { text: '[OK] discipline.......... online', cls: 'ok' },
+  { text: '[OK] hands_on_learning... active', cls: 'ok' },
   { text: '[..] expertise........... in_progress', cls: 'warn' },
 ];
 
@@ -58,7 +46,6 @@ async function bootSequence() {
   }
 }
 
-// Run boot sequence once hero is visible
 const heroObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -71,9 +58,6 @@ const heroObserver = new IntersectionObserver((entries) => {
 const heroConsole = document.querySelector('.console');
 if (heroConsole) heroObserver.observe(heroConsole);
 
-// ---------------------------------------------------------------------------
-// Scroll reveal
-// ---------------------------------------------------------------------------
 const revealEls = document.querySelectorAll('.reveal');
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -85,9 +69,6 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 revealEls.forEach(el => revealObserver.observe(el));
 
-// ---------------------------------------------------------------------------
-// Animate skill / gauge / ctf progress bars when they scroll into view
-// ---------------------------------------------------------------------------
 const fillEls = document.querySelectorAll('[data-fill]');
 const fillObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -107,9 +88,6 @@ fillEls.forEach(el => {
   fillObserver.observe(el);
 });
 
-// ---------------------------------------------------------------------------
-// Active nav link highlight
-// ---------------------------------------------------------------------------
 const sections = document.querySelectorAll('section[id]');
 const navAnchors = document.querySelectorAll('.nav-links a');
 const navObserver = new IntersectionObserver((entries) => {
@@ -125,8 +103,5 @@ const navObserver = new IntersectionObserver((entries) => {
 }, { rootMargin: '-40% 0px -50% 0px' });
 sections.forEach(s => navObserver.observe(s));
 
-// ---------------------------------------------------------------------------
-// Footer year
-// ---------------------------------------------------------------------------
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
